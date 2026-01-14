@@ -1,0 +1,15 @@
+package com.example.demo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+class Student{
+    private String name;
+    private String Course;
+    private int age;
+    private int roll;
+    Student(){}
+
+}
