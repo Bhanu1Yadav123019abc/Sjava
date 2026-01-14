@@ -1,8 +1,6 @@
 package com.example.demo;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
 @Data
 @AllArgsConstructor
 class Student{
@@ -11,5 +9,4 @@ class Student{
     private int age;
     private int roll;
     Student(){}
-
 }
