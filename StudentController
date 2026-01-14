@@ -1,0 +1,22 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import java.util.*;
+@RestController
+class StudentController{
+    Student s = new Student();
+    private final StudentRepository st;
+    public StudentController(StudentRepository s){
+        this.st = s;
+    }
+    @GetMapping("/hello")
+    public List<StudentInfo> Tarun(){
+        return st.findAll();
+    }
+    @GetMapping("/hello/{id}")
+    public Student StudentById(){
+        return new Student("Tarun","BCA",19,19999);
+    }
+
+}
